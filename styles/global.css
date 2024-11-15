@@ -61,6 +61,7 @@ body {
   background-color: var(--shape-bg);
   color: var(--text-body);
   font: var(--body-md);
+  overflow: hidden;
 }
 
 /* utility */

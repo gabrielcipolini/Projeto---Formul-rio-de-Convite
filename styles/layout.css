@@ -1,6 +1,9 @@
 #app {
-  grid-template-columns: 1fr 2fr;
   gap: 2rem;
-  padding: 2rem;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+  margin-inline: auto;
   max-width: 128rem;
+  overflow: hidden;
+  padding: 2rem;
 }

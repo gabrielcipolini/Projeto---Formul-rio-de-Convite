@@ -1,0 +1,15 @@
+main {
+  background-color: var(--shape-body);
+  border-radius: 1.2rem;
+  overflow: auto;
+  padding-block: 8rem;
+
+  .form-container {
+    margin-inline: auto;
+    max-width: 56rem;
+
+    & > h2 {
+      margin-bottom: 4rem;
+    }
+  }
+}
