@@ -7,6 +7,19 @@
 :root {
   font-size: 62.5%;
 
+  /* font */
+  --leckerli-one: "Leckerli One", sans-serif;
+  --logo: 400 4rem/1.5 var(--leckerli-one);
+
+  --baloo-2: "Baloo 2", sans-serif;
+  --heading-md: 700 2.8rem/1.5 var(--baloo-2);
+  --heading-sm: 700 1.8rem/1.5 var(--baloo-2);
+
+  --open-sans: "Open Sans", sans-serif;
+  --body-md: 400 1.6rem/1.5 var(--open-sans);
+  --body-sm: 400 1.4rem/1.5 var(--open-sans);
+  --body-xs: 400 1rem/1.5 var(--open-sans);
+
   /* text */
   --text-body: #c8cdd0;
   --text-heading: #f9f9f9;
@@ -31,13 +44,26 @@
   --shape-hover: #383d42;
 
   /* accent colors */
-  --purple: #b259ff;
-  --fuschia: #ff59f9;
-  --pink: #ff598b;
-  --orange: #ff8b59;
-  --yellow: #ffcd59;
-  --lime: #e1ff59;
-  --green: #59ff91;
-  --cyan: #59fff9;
-  --navy: #6a59ff;
+  & {
+    --purple: #b259ff;
+    --fuschia: #ff59f9;
+    --pink: #ff598b;
+    --orange: #ff8b59;
+    --yellow: #ffcd59;
+    --lime: #e1ff59;
+    --green: #59ff91;
+    --cyan: #59fff9;
+    --navy: #6a59ff;
+  }
+}
+
+body {
+  background-color: var(--shape-bg);
+  color: var(--text-body);
+  font: var(--body-md);
+}
+
+/* utility */
+.grid {
+  display: grid;
 }
