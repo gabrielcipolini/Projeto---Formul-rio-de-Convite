@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festivite</title>
+  </head>
+  <body>
+    <div id="app">
+      <aside>
+        <header>
+          <img src="" alt="" />
+          <h1>Festivite</h1>
+          <p>Crie um convite digital para o seu evento</p>
+        </header>
+      </aside>
+
+      <main>
+        <div class="form-container">
+          <h1>Crie seu convite</h1>
+          <form action="">
+            <fieldset class="event-details">
+              <legend>
+                <img src="" alt="" />
+                Sobre o evento
+              </legend>
+
+              <div class="input-wrapper">
+                <label for="event_name">Título</label>
+                <input type="text" name="event_name" id="event_name" />
+              </div>
+
+              <div class="input-pair">
+                <div class="input-wrapper">
+                  <label for="start_datetime">Início</label>
+                  <input
+                    type="datetime-local"
+                    name="start_datetime"
+                    id="start_datetime"
+                  />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="end_datetime">Fim</label>
+                  <input
+                    type="datetime-local"
+                    name="end_datetime"
+                    id="end_datetime"
+                  />
+                </div>
+              </div>
+
+              <div class="input-pair">
+                <div class="input-wrapper">
+                  <label for="event_type">Tipo</label>
+                  <div class="radio-wrapper">
+                    <div class="radio-image"></div>
+                    <input
+                      type="radio"
+                      name="event_type"
+                      id="event_type_in_person"
+                      value="in-person"
+                    />
+                  </div>
+                  <div class="radio-wrapper">
+                    <div class="radio-image"></div>
+                    <input
+                      type="radio"
+                      name="event_type"
+                      id="event_type_online"
+                      value="online"
+                    />
+                  </div>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="event_location">Local</label>
+                  <input
+                    type="text"
+                    name="event_location"
+                    id="event_location"
+                  />
+                </div>
+              </div>
+
+              <div class="textarea-wrapper">
+                <label for=""></label>
+                <textarea name="" id=""></textarea>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
