@@ -211,6 +211,73 @@ textarea {
   }
 }
 
+.event-style {
+  .event-style-group {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    label {
+      color: var(--text-heading);
+      margin: 0;
+    }
+
+    .event-style-wrapper {
+      background-color: var(--input-base);
+      border-radius: 999px;
+      border: 1px solid var(--input-stroke);
+
+      width: 6.4rem;
+      height: 3.2rem;
+      position: relative;
+
+      .toggle-switch {
+        background-color: var(--input-stroke);
+        border-radius: 999px;
+        width: 2.4rem;
+        height: 2.4rem;
+
+        position: absolute;
+        top: 50%;
+        translate: 0 -50%;
+      }
+    }
+
+    &:has(#dark_mode:checked) {
+      & label:nth-child(3) {
+        display: none;
+      }
+
+      & #dark_mode {
+        display: none;
+      }
+
+      & .toggle-switch {
+        left: 0.4rem;
+      }
+    }
+
+    &:has(#light_mode:checked) {
+      & label:nth-child(2) {
+        display: none;
+      }
+
+      & .event-style-wrapper {
+        background-color: var(--brand-light);
+
+        & #light_mode {
+          display: none;
+        }
+
+        & .toggle-switch {
+          background-color: var(--text-heading);
+          right: 0.4rem;
+        }
+      }
+    }
+  }
+}
+
 .event-details {
   display: none;
 }
