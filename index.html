@@ -157,97 +157,244 @@
               </div>
             </fieldset>
 
-            <fieldset class="event-customization">
+            <fieldset class="event-customization grid">
               <legend>
-                <img src="" alt="" />
+                <img src="assets/icons/paintbrush.svg" alt="Ícone de píncel" />
                 Personalização
               </legend>
 
-              <div class="colors-picker">
+              <div class="colors-group">
                 <label>Cor principal</label>
 
-                <div class="colors-wrapper">
-                  <div class="color1"></div>
-                  <input type="radio" name="colors" id="color1" value="blue" />
-                </div>
-
-                <div class="colors-wrapper">
-                  <div class="color2"></div>
-                  <input type="radio" name="colors" id="color2" value="navy" />
-                </div>
-
-                <div class="colors-wrapper">
-                  <div class="color3"></div>
-                  <input
-                    type="radio"
-                    name="colors"
-                    id="color3"
-                    value="purple"
-                  />
-                </div>
-
-                <div class="colors-wrapper">
-                  <div class="color4"></div>
-                  <input
-                    type="radio"
-                    name="colors"
-                    id="color4"
-                    value="fuschia"
-                  />
-                </div>
-
-                <div class="colors-wrapper">
-                  <div class="color5"></div>
-                  <input type="radio" name="colors" id="color5" value="pink" />
-                </div>
-
-                <div class="colors-wrapper">
-                  <div class="color6"></div>
-                  <input type="radio" name="colors" id="color6" value="red" />
-                </div>
-
-                <div class="colors-wrapper">
-                  <div class="color7"></div>
-                  <input
-                    type="radio"
-                    name="colors"
-                    id="color7"
-                    value="orange"
-                  />
-                </div>
-
-                <div class="colors-wrapper">
-                  <div class="color8"></div>
-                  <input
-                    type="radio"
-                    name="colors"
-                    id="color8"
-                    value="yellow"
-                  />
-                </div>
-
-                <div class="colors-wrapper">
-                  <div class="color9"></div>
-                  <input type="radio" name="colors" id="color9" value="lime" />
-                </div>
-
-                <div class="colors-wrapper">
-                  <div class="color10"></div>
-                  <input
-                    type="radio"
-                    name="colors"
-                    id="color10"
-                    value="green"
-                  />
-                </div>
-
-                <div class="colors-wrapper">
-                  <div class="color11"></div>
-                  <input type="radio" name="colors" id="color11" value="cyan" />
+                <div class="colors-picker grid">
+                  <div class="colors-wrapper">
+                    <div id="color1"></div>
+                    <input
+                      type="radio"
+                      name="colors"
+                      id="color1"
+                      value="blue"
+                    />
+                  </div>
+                  <div class="colors-wrapper">
+                    <div id="color2"></div>
+                    <input type="radio" name="colors" id="  " value="navy" />
+                  </div>
+                  <div class="colors-wrapper">
+                    <div id="color3"></div>
+                    <input
+                      type="radio"
+                      name="colors"
+                      id="color3"
+                      value="purple"
+                    />
+                  </div>
+                  <div class="colors-wrapper">
+                    <div id="color4"></div>
+                    <input
+                      type="radio"
+                      name="colors"
+                      id="color4"
+                      value="fuschia"
+                    />
+                  </div>
+                  <div class="colors-wrapper">
+                    <div id="color5"></div>
+                    <input
+                      type="radio"
+                      name="colors"
+                      id="color5"
+                      value="pink"
+                    />
+                  </div>
+                  <div class="colors-wrapper">
+                    <div id="color6"></div>
+                    <input type="radio" name="colors" id="color6" value="red" />
+                  </div>
+                  <div class="colors-wrapper">
+                    <div id="color7"></div>
+                    <input
+                      type="radio"
+                      name="colors"
+                      id="color7"
+                      value="orange"
+                    />
+                  </div>
+                  <div class="colors-wrapper">
+                    <div id="color8"></div>
+                    <input
+                      type="radio"
+                      name="colors"
+                      id="color8"
+                      value="yellow"
+                    />
+                  </div>
+                  <div class="colors-wrapper">
+                    <div id="color9"></div>
+                    <input
+                      type="radio"
+                      name="colors"
+                      id="color9"
+                      value="lime"
+                    />
+                  </div>
+                  <div class="colors-wrapper">
+                    <div id="color10"></div>
+                    <input
+                      type="radio"
+                      name="colors"
+                      id="color10"
+                      value="green"
+                    />
+                  </div>
+                  <div class="colors-wrapper">
+                    <div id="color11"></div>
+                    <input
+                      type="radio"
+                      name="colors"
+                      id="color11"
+                      value="cyan"
+                    />
+                  </div>
                 </div>
               </div>
 
-              <div class="theme-picker"></div>
+              <div class="theme-event-picker">
+                <label for="">Tema do evento</label>
+                <div class="theme-wrapper grid">
+                  <div class="theme-picker grid">
+                    <img src="assets/images/Image.png" alt="Imagem de um bolo de aniversário" />
+                    <label for="theme1">Aniversário</label>
+                    <input
+                      type="radio"
+                      name="themes"
+                      id="theme1"
+                      value="birthday"
+                    />
+                  </div>
+
+                  <div class="theme-picker grid">
+                    <img src="assets/images/Image-1.png" alt="Imagem com decorações de festa infantil" />
+                    <label for="theme2">Infantil</label>
+                    <input
+                      type="radio"
+                      name="themes"
+                      id="theme2"
+                      value="kids"
+                    />
+                  </div>
+
+                  <div class="theme-picker grid">
+                    <img src="assets/images/Image-2.png" alt="Imagem de um capelo" />
+                    <label for="theme3">Formatura</label>
+                    <input
+                      type="radio"
+                      name="themes"
+                      id="theme3"
+                      value="graduation"
+                    />
+                  </div>
+
+                  <div class="theme-picker grid">
+                    <img src="assets/images/Image-3.png" alt="Imagem de alianças de casamento" />
+                    <label for="theme4">Casamento</label>
+                    <input
+                      type="radio"
+                      name="themes"
+                      id="theme4"
+                      value="wedding"
+                    />
+                  </div>
+
+                  <div class="theme-picker grid">
+                    <img src="assets/images/Image-4.png" alt="Imagem de fraldas simbolizando chá de bebê" />
+                    <label for="theme5">Chá de bebê</label>
+                    <input
+                      type="radio"
+                      name="themes"
+                      id="theme5"
+                      value="babyshower"
+                    />
+                  </div>
+
+                  <div class="theme-picker grid">
+                    <img src="assets/images/Image-5.png" alt="Imagem de uma cozinha" />
+                    <label for="theme6">Chá de panela</label>
+                    <input
+                      type="radio"
+                      name="themes"
+                      id="theme6"
+                      value="bridalshower"
+                    />
+                  </div>
+
+                  <div class="theme-picker grid">
+                    <img src="assets/images/Image-6.png" alt="Imagem de laços coloridos" />
+                    <label for="theme7">Carnaval</label>
+                    <input
+                      type="radio"
+                      name="themes"
+                      id="theme7"
+                      value="carnival"
+                    />
+                  </div>
+
+                  <div class="theme-picker grid">
+                    <img src="assets/images/Image-7.png" alt="Imagem de um ovo de páscoa" />
+                    <label for="theme8">Páscoa</label>
+                    <input
+                      type="radio"
+                      name="themes"
+                      id="theme8"
+                      value="easter"
+                    />
+                  </div>
+
+                  <div class="theme-picker grid">
+                    <img src="assets/images/Image-8.png" alt="Imagem de bandeiras de São João" />
+                    <label for="theme9">São João</label>
+                    <input
+                      type="radio"
+                      name="themes"
+                      id="theme9"
+                      value="saojoao"
+                    />
+                  </div>
+
+                  <div class="theme-picker grid">
+                    <img src="assets/images/Image-9.png" alt="Imagem de abóboras de halloween" />
+                    <label for="theme10">Halloween</label>
+                    <input
+                      type="radio"
+                      name="themes"
+                      id="theme10"
+                      value="halloween"
+                    />
+                  </div>
+
+                  <div class="theme-picker grid">
+                    <img src="assets/images/Image-10.png" alt="Imagem de presentes" />
+                    <label for="theme11">Natal</label>
+                    <input
+                      type="radio"
+                      name="themes"
+                      id="theme11"
+                      value="christmas"
+                    />
+                  </div>
+
+                  <div class="theme-picker grid">
+                    <img src="assets/images/Image-11.png" alt="Imagem de diversas pessoas brindando e/ou celebrando" />
+                    <label for="theme12">Outro</label>
+                    <input
+                      type="radio"
+                      name="themes"
+                      id="theme12"
+                      value="other"
+                    />
+                  </div>
+                </div>
+              </div>
             </fieldset>
           </form>
         </div>
