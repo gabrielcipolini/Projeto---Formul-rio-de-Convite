@@ -1,0 +1,117 @@
+.form-container {
+  & form {
+    gap: 4.8rem;
+
+    fieldset {
+      border: none;
+      gap: 1.6rem;
+
+      legend {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+
+        color: var(--text-heading);
+        font: var(--heading-sm);
+        margin-bottom: 2.6rem;
+
+        & img {
+          width: 2.4rem;
+        }
+      }
+    }
+  }
+}
+
+label {
+  display: inline-block;
+  font: var(--body-sm);
+  margin-bottom: 12px;
+}
+
+input,
+textarea,
+.radio-pair {
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.8rem;
+  padding: 1.2rem 1.6rem;
+  width: 100%;
+
+  color: var(--text-body);
+  font: var(--body-md);
+
+  &::placeholder {
+    color: var(--input-placeholder);
+  }
+
+  &:focus-within,
+  &:focus {
+    border-color: var(--brand-light);
+    outline: none;
+  }
+}
+
+textarea {
+  resize: none;
+  height: 13.6rem;
+}
+
+.input-pair {
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: 1fr 1fr;
+
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}
+
+.radio-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem;
+  justify-items: center;
+  padding: 0.4rem;
+
+  & .radio-wrapper {
+    border-radius: 0.6rem;
+    padding-block: 0.8rem;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+
+    & label {
+      all: unset;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+
+      & svg path {
+        fill: var(--input-placeholder);
+      }
+    }
+
+    & input {
+      all: unset;
+      inset: 0;
+      position: absolute;
+    }
+
+    &:has(input:focus),
+    &:has(input:checked),
+    &:hover {
+      background-color: var(--shape-button);
+
+      label {
+        color: var(--text-heading);
+
+        svg path {
+          fill: var(--brand-light);
+        }
+      }
+    }
+  }
+}
