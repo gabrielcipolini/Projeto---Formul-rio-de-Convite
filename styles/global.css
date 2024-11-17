@@ -68,3 +68,15 @@ body {
 .grid {
   display: grid;
 }
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap-12 {
+  gap: 1.2rem;
+}

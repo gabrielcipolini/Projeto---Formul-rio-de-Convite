@@ -29,9 +29,9 @@
       <main>
         <div class="form-container">
           <h2>Crie seu convite</h2>
-          <form action="" class="grid">
+          <form action="" method="POST" enctype="multipart/form-data" class="grid">
             <fieldset class="event-details grid">
-              <legend>
+              <legend class="flex align-center gap-12">
                 <img
                   src="assets/icons/calendar.svg"
                   alt="Ícone de calendário"
@@ -74,7 +74,7 @@
                   <label>Tipo</label>
 
                   <div class="radio-pair grid">
-                    <div class="radio-wrapper">
+                    <div class="radio-wrapper flex">
                       <label for="event_type_in_person">
                         <svg
                           width="16"
@@ -108,7 +108,7 @@
                       />
                     </div>
 
-                    <div class="radio-wrapper">
+                    <div class="radio-wrapper flex">
                       <label for="event_type_online">
                         <svg
                           width="16"
@@ -158,7 +158,7 @@
             </fieldset>
 
             <fieldset class="event-customization grid">
-              <legend>
+              <legend class="flex align-center gap-12">
                 <img src="assets/icons/paintbrush.svg" alt="Ícone de píncel" />
                 Personalização
               </legend>
@@ -435,7 +435,7 @@
               <div class="event-style-and-image grid">
                 <div class="event-style">
                   <label>Estilo</label>
-                  <div class="event-style-group">
+                  <div class="event-style-group flex align-center gap-12">
                     <div class="event-style-wrapper">
                       <div class="toggle-switch"></div>
 
@@ -464,7 +464,7 @@
 
                 <div class="cover-image-upload">
                   <label for="cover_image">Foto de capa</label>
-                  <div class="cover-image-wrapper">
+                  <div class="cover-image-wrapper flex align-center gap-12">
                     <input type="file" name="" id="cover_image" />
                     <div class="file-chooser">
                       <label for="">
@@ -481,12 +481,107 @@
               </div>
             </fieldset>
 
-            <fieldset class="contact-info">
-              <legend>
-                <img src="assets/icons/paintbrush.svg" alt="Ícone de píncel" />
-                Personalização
+            <fieldset class="contact-info grid">
+              <legend class="flex align-center gap-12">
+                <img src="assets/icons/ico_contact.svg" alt="Ícone de píncel" />
+                Dados para contato
               </legend>
+
+              <div class="input-wrapper">
+                <label for="fullname">Nome</label>
+                <input
+                  type="text"
+                  name="fullname"
+                  id="fullname"
+                  placeholder="Nome completo"
+                  required
+                />
+                <div class="error">
+                  <span>
+                    <img
+                      src="assets/icons/ico-alert.svg"
+                      alt="Ícone com o ponto de exclamação simbolizando um alerta."
+                    />
+                    Campo obrigatório
+                  </span>
+                </div>
+              </div>
+
+              <div class="input-pair grid">
+                <div class="input-wrapper">
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="exemplo@email.com"
+                  />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="phone_number">Telefone</label>
+                  <input
+                    type="text"
+                    name="phone_number"
+                    id="phone_number"
+                    placeholder="(99) 9 9999-9999"
+                  />
+                </div>
+              </div>
             </fieldset>
+
+            <div class="terms-and-conditions">
+              <div class="checkbox-wrapper flex gap-12">
+                <div class="terms-conditions">
+                  <div class="checkbox-style"></div>
+                  <input
+                    type="checkbox"
+                    name="terms"
+                    id="terms"
+                    required
+                    title="Para continuar você deve aceitar nosssos termos."
+                  />
+                </div>
+                <label for="terms"
+                  >Li e concordo com os <a href="#">Termos e Condições</a> e com
+                  a <a href="#">Política de Privacidade</a></label
+                >
+              </div>
+
+              <div class="checkbox-wrapper flex gap-12">
+                <div class="email-updates">
+                  <div class="checkbox-style"></div>
+                  <input
+                    type="checkbox"
+                    name="email_updates"
+                    id="email_updates"
+                  />
+                </div>
+                <label for="email_updates"
+                  >Aceito receber atualizações e promoções por e-mail</label
+                >
+              </div>
+
+              <div class="checkbox-wrapper flex gap-12">
+                <div class="sms-updates">
+                  <div class="checkbox-style"></div>
+                  <input type="checkbox" name="sms_updates" id="sms_updates" />
+                </div>
+                <label for="sms_updates"
+                  >Aceito receber atualizações e promoções por SMS</label
+                >
+              </div>
+            </div>
+
+            <div class="btn-submit flex">
+              <button class="flex align-center gap-12" type="submit">
+                <img
+                  src="assets/icons/ico_ticket.svg"
+                  alt="Ícone de bilhete de acesso"
+                />
+                Gerar convite
+              </button>
+            </div>
           </form>
         </div>
       </main>
