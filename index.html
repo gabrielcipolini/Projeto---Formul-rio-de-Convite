@@ -49,7 +49,7 @@
                 />
               </div>
 
-              <div class="input-pair">
+              <div class="input-pair grid">
                 <div class="input-wrapper">
                   <label for="start_datetime">Início</label>
                   <input
@@ -69,11 +69,11 @@
                 </div>
               </div>
 
-              <div class="input-pair">
+              <div class="input-pair grid">
                 <div class="input-wrapper">
                   <label>Tipo</label>
 
-                  <div class="radio-pair">
+                  <div class="radio-pair grid">
                     <div class="radio-wrapper">
                       <label for="event_type_in_person">
                         <svg
@@ -432,7 +432,7 @@
                 </div>
               </div>
 
-              <div class="input-pair">
+              <div class="event-style-and-image grid">
                 <div class="event-style">
                   <label>Estilo</label>
                   <div class="event-style-group">
@@ -462,8 +462,30 @@
                   </div>
                 </div>
 
-                <div class="cover-image-upload"></div>
+                <div class="cover-image-upload">
+                  <label for="cover_image">Foto de capa</label>
+                  <div class="cover-image-wrapper">
+                    <input type="file" name="" id="cover_image" />
+                    <div class="file-chooser">
+                      <label for="">
+                        <img
+                          src="assets/icons/ico_upload.svg"
+                          alt="Ícone de upload"
+                        />
+                        Selecionar
+                      </label>
+                    </div>
+                    <span>Nenhum arquivo selecionado</span>
+                  </div>
+                </div>
               </div>
+            </fieldset>
+
+            <fieldset class="contact-info">
+              <legend>
+                <img src="assets/icons/paintbrush.svg" alt="Ícone de píncel" />
+                Personalização
+              </legend>
             </fieldset>
           </form>
         </div>
